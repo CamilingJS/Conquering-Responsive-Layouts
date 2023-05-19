@@ -17,3 +17,10 @@
 #### em is useful padding and margin 
 #### it is also best practice to use rem for font sizes due the compounding nature of em
 #### once a media-query is added to the html element then rem will reference that provided font size of that media-query 
+## CSS Tip #3 
+### Utilize vw for big title font sizes for responsive titles it will allow for less media queries 
+#### vh, vw, vmax, vmin reference and ratio the viewport 
+#### it doesn't work too well with paragraph text 
+#### vmax for height can be useful when you want to prevent an image from blowing too big 
+#### lots of extensive testing when using these units 
+
