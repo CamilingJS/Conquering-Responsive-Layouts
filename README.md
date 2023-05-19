@@ -23,4 +23,7 @@
 #### it doesn't work too well with paragraph text 
 #### vmax for height can be useful when you want to prevent an image from blowing too big 
 #### lots of extensive testing when using these units 
-
+## CSS Tip #4
+### Don't use 'em's for font-size, but rather use 'rem's
+#### Remember em's are compounding building on the element's font-size 
+#### rems are reference the root font-size which is typically 16px for most browsers 
