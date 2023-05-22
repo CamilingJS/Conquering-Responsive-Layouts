@@ -18,7 +18,7 @@
 #### it is also best practice to use rem for font sizes due the compounding nature of em
 #### once a media-query is added to the html element then rem will reference that provided font size of that media-query 
 ## CSS Tip #3 
-### Utilize vw for big title font sizes for responsive titles it will allow for less media queries 
+### Utilize vw for big title font sizes for responsive titles. It will allow for less media queries 
 #### vh, vw, vmax, vmin reference and ratio the viewport 
 #### it doesn't work too well with paragraph text 
 #### vmax for height can be useful when you want to prevent an image from blowing too big 
@@ -27,3 +27,16 @@
 ### Don't use 'em's for font-size, but rather use 'rem's
 #### Remember em's are compounding building on the element's font-size 
 #### rems are reference the root font-size which is typically 16px for most browsers 
+## CSS Tip #5
+### Flex items will want to shrink down to the size of it's elements and so you have to give them the width of 100%
+#### Because of this it may lead to side-scrolling 
+#### note the following code;
+.col + .col {}
+#### if a column has an adjacent sibling of column they will be selected 
+#### in other words if the col has something before it then it will be selected 
+#### to acquire the gap result (as gap{} is only available in Firefox) we can do the following:
+#### .col + .col {
+####    margin-left: 32px; 
+#### }
+
+
