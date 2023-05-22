@@ -38,5 +38,11 @@
 #### .col + .col {
 ####    margin-left: 32px; 
 #### }
+## CSS Tip #6
+### Combine classnames such as container and row 
+#### container will handle the padding and margins of most sections and the row will handle the display flex 
+#### HTML: <div class="container row"></div>
+#### CSS: container{ padding: 13m } row{display: flex}
+
 
 

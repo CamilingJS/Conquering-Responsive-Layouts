@@ -16,12 +16,19 @@
 }
 
 .container{
-    padding: 0 6em;
+    padding: 3em 6em;
     min-height: 270px;
 
 }
 .hero__text{
     max-width: 50%;
+}
+
+.hero__img {
+    align-self: flex-start;
+}
+.hero__img img {
+    max-width: 270px;
 }
 
 .container h1 {
@@ -51,7 +58,7 @@
 .row{
     display: flex;
     flex-direction: row;
-    margin: 4rem 2rem;
+    justify-content: space-evenly; 
 }
 
 .col {
@@ -64,15 +71,23 @@
     margin-left: 2rem;
 }
 
-.sectionA h1 {
+.three-col h2 {
     color: #87629A;
+    font-size: xx-large;
+    margin-bottom: .5em; 
 }
 
-.sectionB {
+.two-col {
     color: white; 
     background-color: #136C72;
-    padding: 2rem 4rem; 
+    padding: 1rem 0; 
 }
+
+.two-col h2 {
+    font-size: xx-large;
+    margin-bottom: .5em; 
+}
+
 
 
 
