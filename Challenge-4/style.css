@@ -17,6 +17,7 @@
 
 .container{
     padding: 0 6em;
+    min-height: 270px;
 
 }
 .hero__text{
@@ -50,12 +51,13 @@
 .row{
     display: flex;
     flex-direction: row;
-    margin: 4rem 0;
+    margin: 4rem 2rem;
 }
 
 .col {
     width: 100%;
     text-align: center;
+    min-width: 360px;
 }
 
 .col + .col {
@@ -64,6 +66,12 @@
 
 .sectionA h1 {
     color: #87629A;
+}
+
+.sectionB {
+    color: white; 
+    background-color: #136C72;
+    padding: 2rem 4rem; 
 }
 
 
