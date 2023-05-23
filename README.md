@@ -8,31 +8,31 @@
 #### I typically avoid using width with child elements as well when possible
 ## CSS Tip #2
 ### With sizes avoid using pixels to keep responsiveness of the web:
-#### When using em for sizes for fonts we are referencing the font size of it's parent element and this size is compounding 
-#### When using em for margin and padding and all other elements not font we are referencing the font size of that element 
+#### When using 'em' for sizes for fonts we are referencing the font size of it's parent element and this size is compounding 
+#### When using 'em' for margin and padding and all other elements not font we are referencing the font size of that element 
 #### Question, about how many pixels is 5em? It would typically be 5 x your parent element's font size and so if your parent's font is 16px then 5em will be 80px (5 x 16px)
 #### The browser default is 16px font size and so 1em is generally 16px -- relative to the parent element and within available media-query 
-#### rem is always looking at the root font size and so it is more consistent 
-#### rem is useful to keep margins consistent sizes 
-#### em is useful padding and margin 
-#### it is also best practice to use rem for font sizes due the compounding nature of em
-#### once a media-query is added to the html element then rem will reference that provided font size of that media-query 
+### 'rem's will always reference the root font size and so it is more consistent 
+#### 'rem's are useful to keep margins consistent sizes 
+#### em is useful padding 
+### It is best practice to use 'rem's for font sizes due the compounding nature of em
+#### Once a media-query is added to the html element then the 'rem's will reference that provided font size of that media-query 
 ## CSS Tip #3 
-### Utilize vw for big title font sizes for responsive titles. It will allow for less media queries 
+### Utilize vw for large title font sizes for responsive titles. It will allow for less media queries 
 #### vh, vw, vmax, vmin reference and ratio the viewport 
-#### it doesn't work too well with paragraph text 
-#### vmax for height can be useful when you want to prevent an image from blowing too big 
-#### lots of extensive testing when using these units 
+#### these units do not work too well with paragraph font sizes
+#### vmax for height can be useful when you want to prevent an image from blowing up too big 
+#### ensure lots of extensive testing when using these units 
 ## CSS Tip #4
 ### Don't use 'em's for font-size, but rather use 'rem's
 #### Remember em's are compounding building on the element's font-size 
-#### rems are reference the root font-size which is typically 16px for most browsers 
+#### 'rem's reference the root font-size which is typically 16px for most browsers 
 ## CSS Tip #5
-### Flex items will want to shrink down to the size of it's elements and so you have to give them the width of 100%
-#### Because of this it may lead to side-scrolling 
-#### note the following code;
-.col + .col {}
-#### if a column has an adjacent sibling of column they will be selected 
+### Flex items will want to shrink down to the size of it's elements and so set width to 100%
+#### Because of this nature Flex elements may lead to side-scrolling 
+### Note the following CSS code:
+#### .col + .col {}
+#### if a column has an adjacent sibling column they will be selected 
 #### in other words if the col has something before it then it will be selected 
 #### to acquire the gap result (as gap{} is only available in Firefox) we can do the following:
 #### .col + .col {
