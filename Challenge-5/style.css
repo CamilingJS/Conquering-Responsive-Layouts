@@ -84,6 +84,22 @@
     margin-bottom: .5em; 
 }
 
+.main{
+    max-width: 50%;
+}
+
+.main h2, .main p {
+    margin-bottom: 1rem
+}
+.greenHeader{
+    color: #136C72; 
+    font-size: xx-large;
+}
+.main p {
+    font-size: large;
+    color: rgb(82, 82, 82);
+}
+
 .aside{
     justify-content: center;
     align-items: center;
@@ -97,8 +113,14 @@
     justify-content: center;
 }
 .aside .col {
-    margin-bottom: 2rem;
+    margin: 1rem; 
+    padding: 1rem; 
 }
+.aside .col h2 {
+    margin-bottom: .5rem;
+}
+
+
 
 
 
