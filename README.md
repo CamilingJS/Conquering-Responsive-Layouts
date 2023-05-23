@@ -43,6 +43,8 @@
 #### container will handle the padding and margins of most sections and the row will handle the display flex 
 #### HTML: <div class="container row"></div>
 #### CSS: container{ padding: 13m } row{display: flex}
-
+## CSS Tip #7
+### Set all img tags to max-width: 100% within a div
+#### This will ensure images will not overflow the page 
 
 
