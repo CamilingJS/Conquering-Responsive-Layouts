@@ -49,5 +49,9 @@
 #### .hero__img {
 ####    align-self: flex-start;
 #### }
+## CSS Tip #8 
+### In a flex container of a row of elements, say a nav bar, you can differentiate the margin of a one more elements by utilizing 'margin-left: auto'. This will move the one or more targeted items to the right   
+#### Do note flex justify-content space between is one of the more useful flex attributes 
+
 
 
