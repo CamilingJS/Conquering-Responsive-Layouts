@@ -1,6 +1,6 @@
 # Responsive-Layouts with CSS - Tips and Tricks
 ## CSS Tip #1 
-### Avoid using height in most scenarios:
+### Avoid using height in most scenarios, especially fixed heights:
 #### The web is naturally responsive, when you start adding height in your CSS you are essentially taking away that responsiveness
 #### Utilize padding to control the size of your spacing instead of adding height
 ### It is best to use Percentages rather than fixed widths to make our lives easier:
