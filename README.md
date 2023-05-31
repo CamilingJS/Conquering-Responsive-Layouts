@@ -52,6 +52,13 @@
 ## CSS Tip #8 
 ### In a flex container of a row of elements, say a nav bar, you can differentiate the margin of one or more elements by utilizing 'margin-left: auto'. This will move the targeted items to the very right of the area    
 #### Do note flex justify-content space between is one of the more useful flex attributes 
+## CSS Tip #9 
+### With @media queries min-width and max-width, the meanings are actually the opposite
+#### E.g. @media (min-width: 600px){} //this means 600px or bigger
+#### E.g. @media (max-width: 600px){} //this means 600px or smaller
+### @media (minx-width: 600px) and (max-width: 900px) {} // here we are targeting (inclusive) between 600px and 900px 
+### In your CSS file the order to which @media (min-width: ) is place is very crucial. Anything lower in the file overrides the top, and so you must place your @media queries from smallest to biggest 
+
 
 
 
