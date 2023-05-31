@@ -10,7 +10,7 @@
 .hero{
     background-color: #23424A;
     color: white;
-    padding: 100px 0;
+    padding: 6.25rem 0;
     
 }
 
@@ -169,6 +169,26 @@ header {
 
 .nav__item--push-right {
     margin-left: auto; 
+}
+
+@media (max-width: 600px){
+  
+    .row{
+        display: block;
+    }
+    .hero__text,
+    .hero__img, 
+    .main,
+    .aside {
+        max-width: 100%; 
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+        
 }
 
 
