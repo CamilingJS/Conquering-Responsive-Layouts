@@ -27,8 +27,9 @@
     align-self: flex-start;
 }
 .hero__img img {
-    max-width: 270px;
+    max-width: 100%;
 }
+
 
 .container h1 {
     font-size: 3rem;
@@ -172,7 +173,13 @@ header {
 }
 
 @media (max-width: 600px){
-  
+    .nav{
+        flex-direction: column;
+    }
+    .container {
+        width: 85%;
+        margin: 0 auto; 
+    }
     .row{
         display: block;
     }

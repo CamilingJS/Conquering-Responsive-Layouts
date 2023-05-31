@@ -58,6 +58,39 @@
 #### E.g. @media (max-width: 600px){} //this means 600px or smaller
 ### @media (minx-width: 600px) and (max-width: 900px) {} // here we are targeting (inclusive) between 600px and 900px 
 ### In your CSS file the order to which @media (min-width: ) is place is very crucial. Anything lower in the file overrides the top, and so you must place your @media queries from smallest to biggest 
+## CSS Tip #10
+### Which breakpoints should I use? See below
+### Use the following media query breakpoints: 600px, 900px, 1200px, and 1800px
+#### For SASS utilize the following at your discretion: 
+#### @mixin for-phone-only {
+####   @media (max-width: 599px) { @content; }
+#### }
+#### @mixin for-tablet-portrait-up {
+####   @media (min-width: 600px) { @content; }
+#### }
+#### @mixin for-tablet-landscape-up {
+####   @media (min-width: 900px) { @content; }
+#### }
+#### @mixin for-desktop-up {
+####   @media (min-width: 1200px) { @content; }
+#### }
+#### @mixin for-big-desktop-up {
+####   @media (min-width: 1800px) { @content; }
+#### }
+## CSS Tip #11
+### Typography goes a long way 
+### Utilize text CSS properties "line-height" and "letter-spacing" 
+## CSS Tip #12
+### CSS Custom properties are variable CSS properties you can reuse 
+### You can define custom properties in the root 
+### :root {
+### --primary-color: purple; 
+### }
+### body {
+### color: var(--primary-color)
+### }
+
+
 
 
 
